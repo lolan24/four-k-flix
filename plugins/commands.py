@@ -98,7 +98,8 @@ async def start(client, message):
             await message.reply_text("Make sure Bot is admin in Forcesub channel")
             return
         try:
-            btn = [[InlineKeyboardButton("ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ", url=invite_link.invite_link)]]
+            btn = [[InlineKeyboardButton("ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ", url=invite_link.invite_link)],[
+                    InlineKeyboardButton('⤬ JOIN  HERE  AND  TRY AGAIN ⤬', url=f'https://t.me/MalluTVserials')]]
             if message.command[1] != "subscribe":
                 if REQUEST_TO_JOIN_MODE == True:
                     if TRY_AGAIN_BTN == True:
